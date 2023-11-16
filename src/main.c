@@ -7,7 +7,7 @@
 void executeGitCommands(const char *filename) {
     FILE *file = fopen(filename, "r");
     if (file == NULL) {
-        perror("Erro ao abrir o arquivo de configuração");
+        perror("Error");
         exit(EXIT_FAILURE);
     }
 
