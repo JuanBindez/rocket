@@ -8,10 +8,11 @@
 #define LICENSE "GPLv2 License"
 
 void showHelp() {
+    printf("Makeline Version: %s\n\n", VERSION);
     printf("Usage: makeline [-h]\n");
     printf("Executes commands from a configuration file.\n\n");
     printf("Author: %s\n", AUTHOR);
-    printf("License: %s\n", LICENSE);
+    printf("License: %s\n\n", LICENSE);
     printf("Options:\n");
     printf("  -h\t\tDisplay this help message.\n");
     printf("  -v\t\tDisplays the program version.\n");
