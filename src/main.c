@@ -4,7 +4,6 @@
 
 #define MAX_LENGTH 1000
 
-// Função para executar comandos do Git a partir do arquivo de configuração
 void executeGitCommands(const char *filename) {
     FILE *file = fopen(filename, "r");
     if (file == NULL) {
@@ -14,13 +13,11 @@ void executeGitCommands(const char *filename) {
 
     char command[MAX_LENGTH];
     while (fgets(command, sizeof(command), file) != NULL) {
-        // Remover a quebra de linha no final do comando
         char *newline = strchr(command, '\n');
         if (newline != NULL) {
             *newline = '\0';
         }
 
-        // Executar o comando Git
         system(command);
     }
 
@@ -28,10 +25,8 @@ void executeGitCommands(const char *filename) {
 }
 
 int main() {
-    // Nome do arquivo de configuração
     const char *configFileName = "Makegit";
 
-    // Executar os comandos do Git a partir do arquivo de configuração
     executeGitCommands(configFileName);
 
     return 0;
