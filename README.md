@@ -1,6 +1,6 @@
 # Makegit
 
-commit automation
+## Git automation
 
 ### Instalation:
 
