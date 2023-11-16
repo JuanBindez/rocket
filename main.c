@@ -29,7 +29,7 @@ void executeGitCommands(const char *filename) {
 
 int main() {
     // Nome do arquivo de configuração
-    const char *configFileName = "makegit";
+    const char *configFileName = "Makegit";
 
     // Executar os comandos do Git a partir do arquivo de configuração
     executeGitCommands(configFileName);
