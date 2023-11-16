@@ -25,7 +25,7 @@ void showVersion() {
 void executeCommands(const char *filename) {
     FILE *file = fopen(filename, "r");
     if (file == NULL) {
-        perror("Erro");
+        perror("Error");
         exit(EXIT_FAILURE);
     }
 
