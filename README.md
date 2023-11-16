@@ -1,6 +1,6 @@
-# Makegit
+# Makeline
 
-## Git automation
+## direct command line automation
 
 ### Instalation:
 
