@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -O2
 
-TARGET = makegit
+TARGET = makeline
 INSTALL_DIR = /usr/local/bin
 
 all: $(TARGET)

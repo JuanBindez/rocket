@@ -3,11 +3,28 @@
 #include <string.h>
 
 #define MAX_LENGTH 1000
+#define VERSION "1.0-rc2"
+#define AUTHOR "2023 Juan Bindez <juanbindez780@gmail.com>"
+#define LICENSE "GPLv2 License"
 
-void executeGitCommands(const char *filename) {
+void showHelp() {
+    printf("Usage: makeline [-h]\n");
+    printf("Executes commands from a configuration file.\n\n");
+    printf("Options:\n");
+    printf("  -h\t\tDisplay this help message.\n");
+    printf("  -v\t\tDisplays the program version.\n");
+}
+
+void showVersion() {
+    printf("Version: %s\n", VERSION);
+    printf("Author: %s\n", AUTHOR);
+    printf("License: %s\n", LICENSE);
+}
+
+void executeCommands(const char *filename) {
     FILE *file = fopen(filename, "r");
     if (file == NULL) {
-        perror("Error");
+        perror("Erro");
         exit(EXIT_FAILURE);
     }
 
@@ -24,10 +41,20 @@ void executeGitCommands(const char *filename) {
     fclose(file);
 }
 
-int main() {
-    const char *configFileName = "Makegit";
+int main(int argc, char *argv[]) {
+    const char *configFileName = "Makeline";
 
-    executeGitCommands(configFileName);
+    if (argc == 2 && strcmp(argv[1], "-h") == 0) {
+        showHelp();
+        return 0;
+    }
+
+    if (argc == 2 && strcmp(argv[1], "-v") == 0) {
+        showVersion();
+        return 0;
+    }
+
+    executeCommands(configFileName);
 
     return 0;
 }
