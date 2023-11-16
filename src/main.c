@@ -10,6 +10,8 @@
 void showHelp() {
     printf("Usage: makeline [-h]\n");
     printf("Executes commands from a configuration file.\n\n");
+    printf("Author: %s\n", AUTHOR);
+    printf("License: %s\n", LICENSE);
     printf("Options:\n");
     printf("  -h\t\tDisplay this help message.\n");
     printf("  -v\t\tDisplays the program version.\n");
@@ -17,8 +19,6 @@ void showHelp() {
 
 void showVersion() {
     printf("Version: %s\n", VERSION);
-    printf("Author: %s\n", AUTHOR);
-    printf("License: %s\n", LICENSE);
 }
 
 void executeCommands(const char *filename) {
