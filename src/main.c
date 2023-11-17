@@ -9,10 +9,10 @@
 
 void showHelp() {
     printf("Makeline %s\n\n", VERSION);
-    printf("Usage: makeline [-h]\n");
-    printf("Executes commands from a configuration file.\n\n");
     printf("%s\n", AUTHOR);
     printf("%s\n\n", LICENSE);
+    printf("Usage: makeline [-h]\n");
+    printf("Executes commands from a configuration file.\n\n");
     printf("Options:\n");
     printf("  -h\t\tDisplay this help message.\n");
     printf("  -v\t\tDisplays the program version.\n");
