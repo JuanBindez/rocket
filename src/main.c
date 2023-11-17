@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <dirent.h>
 
 #define MAX_LENGTH 1000
-#define VERSION "1.0-rc2"
+#define VERSION "1.0-rc3"
 #define AUTHOR "2023 Juan Bindez <juanbindez780@gmail.com>"
 #define LICENSE "GPLv2 License"
 
@@ -42,8 +43,26 @@ void executeCommands(const char *filename) {
     fclose(file);
 }
 
+void processFilesWithExtension(const char *extension) {
+    DIR *dir;
+    struct dirent *ent;
+
+    if ((dir = opendir(".")) != NULL) {
+        while ((ent = readdir(dir)) != NULL) {
+            if (ent->d_type == DT_REG &&
+                (strcmp(ent->d_name, "Makeline") == 0 || strstr(ent->d_name, extension) != NULL)) {
+                executeCommands(ent->d_name);
+            }
+        }
+        closedir(dir);
+    } else {
+        perror("Error opening directory");
+        exit(EXIT_FAILURE);
+    }
+}
+
 int main(int argc, char *argv[]) {
-    const char *configFileName = "Makeline";
+    const char *configFileExtension = ".Makeline";
 
     if (argc == 2 && strcmp(argv[1], "-h") == 0) {
         showHelp();
@@ -55,7 +74,7 @@ int main(int argc, char *argv[]) {
         return 0;
     }
 
-    executeCommands(configFileName);
+    processFilesWithExtension(configFileExtension);
 
     return 0;
 }
