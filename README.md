@@ -42,9 +42,3 @@ this command will read the Makeline file and execute the commands
 #### MakeLine:
 
 - The main focus of "MakeLine" is on automating system commands and scripts, making it easier to perform daily or common tasks. It is flexible enough to handle a variety of commands beyond code compilation.
-
-#### Makefile:
-
-- The "Makefile" is mainly used to define build rules and dependencies in software development projects. It manages the compilation of source code into executable binaries and other artifacts.
-
-
