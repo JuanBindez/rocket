@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <dirent.h>
 
 #define MAX_LENGTH 1000
 #define VERSION "1.0-rc3"
@@ -43,38 +42,28 @@ void executeCommands(const char *filename) {
     fclose(file);
 }
 
-void processFilesWithExtension(const char *extension) {
-    DIR *dir;
-    struct dirent *ent;
-
-    if ((dir = opendir(".")) != NULL) {
-        while ((ent = readdir(dir)) != NULL) {
-            if (ent->d_type == DT_REG &&
-                (strcmp(ent->d_name, "Makeline") == 0 || strstr(ent->d_name, extension) != NULL)) {
-                executeCommands(ent->d_name);
-            }
-        }
-        closedir(dir);
-    } else {
-        perror("Error opening directory");
-        exit(EXIT_FAILURE);
-    }
-}
-
 int main(int argc, char *argv[]) {
-    const char *configFileExtension = ".Makeline";
-
-    if (argc == 2 && strcmp(argv[1], "-h") == 0) {
+    if (argc < 2) {
         showHelp();
         return 0;
     }
 
-    if (argc == 2 && strcmp(argv[1], "-v") == 0) {
-        showVersion();
-        return 0;
+    for (int i = 1; i < argc; i++) {
+        if (strcmp(argv[i], "-h") == 0) {
+            showHelp();
+            return 0;
+        } else if (strcmp(argv[i], "-v") == 0) {
+            showVersion();
+            return 0;
+        } else {
+            char *extension = strrchr(argv[i], '.');
+            if (extension != NULL && strcmp(extension, ".Makeline") == 0) {
+                executeCommands(argv[i]);
+            } else if (strcmp(argv[i], "Makeline") == 0) {
+                executeCommands(argv[i]);
+            }
+        }
     }
-
-    processFilesWithExtension(configFileExtension);
 
     return 0;
 }
