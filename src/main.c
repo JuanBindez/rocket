@@ -3,7 +3,7 @@
 #include <string.h>
 
 #define MAX_LENGTH 1000
-#define VERSION "1.0-rc3"
+#define VERSION "1.0-rc4"
 #define AUTHOR "Copyright (C) 2023 Juan Bindez <juanbindez780@gmail.com>"
 #define LICENSE "GPLv2 License"
 
