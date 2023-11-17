@@ -4,15 +4,15 @@
 
 #define MAX_LENGTH 1000
 #define VERSION "1.0-rc3"
-#define AUTHOR "2023 Juan Bindez <juanbindez780@gmail.com>"
+#define AUTHOR "Copyright (C) 2023 Juan Bindez <juanbindez780@gmail.com>"
 #define LICENSE "GPLv2 License"
 
 void showHelp() {
-    printf("Makeline Version: %s\n\n", VERSION);
+    printf("Makeline %s\n\n", VERSION);
     printf("Usage: makeline [-h]\n");
     printf("Executes commands from a configuration file.\n\n");
-    printf("Author: %s\n", AUTHOR);
-    printf("License: %s\n\n", LICENSE);
+    printf("%s\n", AUTHOR);
+    printf("%s\n\n", LICENSE);
     printf("Options:\n");
     printf("  -h\t\tDisplay this help message.\n");
     printf("  -v\t\tDisplays the program version.\n");
