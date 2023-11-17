@@ -18,7 +18,7 @@ Makeline is a command-line tool designed to automate command execution on Unix-l
 
 ## Usage:
 
-#### create a file with the name Makeline and inside place the commands you want to execute in sequence, for example:
+#### create a file with the name Makeline or with extension .Makeline and inside place the commands you want to execute in sequence, for example:
 
     git add .
     git commit -m 'update'
