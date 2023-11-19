@@ -1,6 +1,6 @@
 # Makeline
 
-## Direct command line automation
+## command line automation
 
 ### Description:
 
