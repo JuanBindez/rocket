@@ -38,4 +38,4 @@ this command will read the Makeline file and execute the commands
 
 #### Makeline:
 
-- The main focus of "MakeLine" is on automating system commands and scripts, making it easier to perform daily or common tasks. It is flexible enough to handle a variety of commands beyond code compilation.
+- The main focus of "Makeline" is on automating system commands and scripts, making it easier to perform daily or common tasks. It is flexible enough to handle a variety of commands beyond code compilation.
