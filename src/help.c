@@ -4,12 +4,12 @@
 
 #define VERSION "1.2.0"
 #define AUTHOR "Copyright (C) 2023 Juan Bindez <juanbindez780@gmail.com>"
-#define LICENSE "GPLv2 License"
+#define LICENSE "GNU General Public License, version 2"
 
 void showHelp() {
     // Display program information
     printf("Makeline %s\n", VERSION);
-    printf("Usage: makeline [-h] [OPTIONS] FILE\n");
+    printf("Syntax: makeline [-h] [OPTIONS] FILE\n");
     printf("Executes commands from a configuration file.\n");
 
     // Display options
