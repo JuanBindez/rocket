@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "exe_commands.h"
-#include "help.h"
+#include "include/exe_commands.h"
+#include "include/help.h"
 
 
 int main(int argc, char *argv[]) {
