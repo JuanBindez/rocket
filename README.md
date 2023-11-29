@@ -4,7 +4,6 @@
 
 ### Description:
 
-
 Makeline is a command-line tool designed to automate command execution on Unix-like operating systems. It offers a convenient way to create and run custom scripts, making it easy to automate repetitive tasks.
 
 ### Instalation:
