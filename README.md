@@ -35,7 +35,6 @@ Makeline is a command-line tool designed to automate command execution on Unix-l
     makeline script.Makeline
     
 this command will read the Makeline file and execute the commands
-
 ----------
 
 #### Makeline:
