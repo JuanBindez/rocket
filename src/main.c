@@ -5,7 +5,6 @@
 #include "include/exe_commands.h"
 #include "include/help.h"
 
-
 int main(int argc, char *argv[]) {
     if (argc < 2) {
         showHelp();
