@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 #define VERSION "2.0.0"
 #define AUTHOR "Copyright (C) 2023 Juan Bindez <juanbindez780@gmail.com>"
 #define LICENSE "GNU General Public License, version 2"
