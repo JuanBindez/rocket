@@ -9,8 +9,11 @@ Makeline is a command-line tool designed to automate command execution on Unix-l
 ### Instalation:
 
     git clone https://github.com/JuanBindez/Makeline
+    
     cd Makeline
+    
     make
+    
     sudo make install
 
 ### Uninstall:
