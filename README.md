@@ -20,7 +20,7 @@ Rocket is a command-line tool designed to automate command execution on Unix-lik
 
 ## Usage:
 
-#### create a file with the name Makeline or with extension .rocketfile and inside place the commands you want to execute in sequence, for example:
+#### create a file with the name rocktfile or with extension .rocketfile and inside place the commands you want to execute in sequence, for example:
 
     git add .
     git commit -m 'update'
