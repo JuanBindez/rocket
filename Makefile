@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -O2
 
-TARGET = makeline
+TARGET = rocket
 INSTALL_DIR = /usr/local/bin
 
 SRC_DIR = src
