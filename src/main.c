@@ -20,9 +20,9 @@ int main(int argc, char *argv[]) {
             return 0;
         } else {
             char *extension = strrchr(argv[i], '.');
-            if (extension != NULL && strcmp(extension, ".Makeline") == 0) {
+            if (extension != NULL && strcmp(extension, ".rocketfile") == 0) {
                 executeCommands(argv[i]);
-            } else if (strcmp(argv[i], "Makeline") == 0) {
+            } else if (strcmp(argv[i], "rocketfile") == 0) {
                 executeCommands(argv[i]);
             }
         }
