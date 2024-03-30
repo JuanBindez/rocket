@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
         if (strcmp(argv[i], "-h") == 0) {
             showHelp();
             return 0;
-        } else if (strcmp(argv[i], "-v") == 0) {
+        } else if (strcmp(argv[i], "-V") == 0) {
             showVersion();
             return 0;
         } else {
