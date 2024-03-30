@@ -10,7 +10,11 @@ Rocket is a command-line tool designed to automate command execution on Unix-lik
 
     git clone https://github.com/JuanBindez/rocket
     cd rocket
+
+### Compile
     make
+
+### Install
     sudo make install
 
 ### Uninstall:
