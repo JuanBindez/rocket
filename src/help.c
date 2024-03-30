@@ -3,14 +3,14 @@
 #include <string.h>
 
 
-#define VERSION "2.0.0"
-#define AUTHOR "Copyright (C) 2023 Juan Bindez <juanbindez780@gmail.com>"
+#define VERSION "3.0-rc1"
+#define AUTHOR "Copyright (C) 2023 - 2024 Juan Bindez <juanbindez780@gmail.com>"
 #define LICENSE "GNU General Public License, version 2"
 
 void showHelp() {
     // Display program information
-    printf("Makeline %s\n", VERSION);
-    printf("Syntax: makeline [-h] [OPTIONS] FILE\n");
+    printf("rocket %s\n", VERSION);
+    printf("Syntax: rocket [-h] [OPTIONS] FILE\n");
     printf("Executes commands from a configuration file.\n");
 
     // Display options
