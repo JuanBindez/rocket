@@ -28,13 +28,13 @@ Rocket is a command-line tool designed to automate command execution on Unix-lik
     
 #### To run type:
 
-    rocket rocketfile
+    rocket Rocketfile
 
 #### or:
 
     rocket script.rocketfile
     
-this command will read the Makeline file and execute the commands
+this command will read the Rocketfile and execute the commands
 ----------
 
 #### Rocket:

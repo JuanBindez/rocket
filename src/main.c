@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
             char *extension = strrchr(argv[i], '.');
             if (extension != NULL && strcmp(extension, ".rocketfile") == 0) {
                 executeCommands(argv[i]);
-            } else if (strcmp(argv[i], "rocketfile") == 0) {
+            } else if (strcmp(argv[i], "Rocketfile") == 0) {
                 executeCommands(argv[i]);
             }
         }
